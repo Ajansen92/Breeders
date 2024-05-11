@@ -7,7 +7,8 @@ import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component
 import { UserContext } from "../../contexts/user.context";
 import { CartContext } from "../../contexts/cart.context";
 
-import { ReactComponent as Geckologo } from "../../assets/geckogurulogo3.svg";
+import { ReactComponent as GeckoLogo } from "../../assets/geckogurulogo3.svg";
+
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 
 import "./navigation.styles.scss";
@@ -20,19 +21,20 @@ const Navigation = () => {
     <Fragment>
       <div className="navigation">
         <Link className="logo-container" to="/">
-          <Geckologo className="logo" />
+          <GeckoLogo className="logo" />
         </Link>
         <div className="nav-links-container">
           <Link className="nav-link" to="/shop">
-            Shop
+            SHOP
           </Link>
+
           {currentUser ? (
             <span className="nav-link" onClick={signOutUser}>
-              Sign-Out
+              SIGN OUT
             </span>
           ) : (
             <Link className="nav-link" to="/auth">
-              Sign-In
+              SIGN IN
             </Link>
           )}
           <CartIcon />

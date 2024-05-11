@@ -1,3 +1,5 @@
+import { Outlet } from "react-router-dom";
+
 import Directory from "../../components/directory/directory.component";
 
 const Home = () => {
@@ -5,31 +7,36 @@ const Home = () => {
     {
       id: 1,
       title: "Snakes",
-      image: "/animalImages/snake.jpeg",
+      imageUrl: "/animalImages/snake.jpeg",
     },
     {
       id: 2,
       title: "Amphibians",
-      image: "/animalImages/amphibian.jpeg",
+      imageUrl: "/animalImages/amphibian.jpeg",
     },
     {
       id: 3,
       title: "Turtles",
-      image: "/animalImages/turtle.jpeg",
+      imageUrl: "/animalImages/turtle.jpeg",
     },
     {
       id: 4,
-      title: "Monitor Lizards",
-      image: "/animalImages/monitor2.jpeg",
+      title: " Monitor Lizards",
+      imageUrl: "/animalImages/monitor2.jpeg",
     },
     {
       id: 5,
       title: "Lizards",
-      image: "/animalImages/lizard2.jpeg",
+      imageUrl: "/animalImages/lizard2.jpeg",
     },
   ];
 
-  return <Directory categories={categories} />;
+  return (
+    <div>
+      <Directory categories={categories} />
+      <Outlet />
+    </div>
+  );
 };
 
 export default Home;
