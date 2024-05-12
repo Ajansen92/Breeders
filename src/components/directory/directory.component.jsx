@@ -6,31 +6,31 @@ const categories = [
   {
     id: 1,
     title: "Snakes",
-    imageUrl: "/animalImages/snake.jpeg",
+    imageUrl: "/animalImages/ball-python.jpeg",
     route: "shop/snakes",
   },
   {
     id: 2,
     title: "Amphibians",
-    imageUrl: "/animalImages/amphibian.jpeg",
+    imageUrl: "/animalImages/frog.jpeg",
     route: "shop/amphibians",
   },
   {
     id: 3,
     title: "Turtles",
-    imageUrl: "/animalImages/turtle.jpeg",
+    imageUrl: "/animalImages/turtlepreview.jpeg",
     route: "shop/turtles",
   },
   {
     id: 4,
     title: " Monitor Lizards",
-    imageUrl: "/animalImages/monitor2.jpeg",
+    imageUrl: "/animalImages/monitorpreview.jpeg",
     route: "shop/monitor lizards",
   },
   {
     id: 5,
     title: "Lizards",
-    imageUrl: "/animalImages/lizard2.jpeg",
+    imageUrl: "/animalImages/lizardpreview.jpeg",
     route: "shop/lizards",
   },
 ];
